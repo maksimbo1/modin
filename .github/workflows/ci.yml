@@ -562,7 +562,7 @@ jobs:
 
   test-windows:
     needs: [lint-commit, lint-flake8, lint-black, test-api, test-headers]
-    runs-on: windows-latest
+    runs-on: [self-hosted, windows]
     defaults:
       run:
         shell: bash -l {0}
